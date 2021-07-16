@@ -16,7 +16,7 @@
       <div class="controls">
         <h1>Kick</h1>
         <button data-track="0" class="mute kick-volume">
-          <i class="fa fa-microphone-slash"></i>
+          <i class="fa fa-volume-off"></i>
         </button>
         <select name="kick-select" id="kick-select">
           <option value="./allSounds/kick-classic.wav">Classic Kick</option>
@@ -40,7 +40,7 @@
       <div class="controls">
         <h1>Snare</h1>
         <button data-track="1" class="mute snare-volume">
-          <i class="fa fa-microphone-slash"></i>
+          <i class="fa fa-volume-off"></i>
         </button>
         <select name="snare-select" id="snare-select">
           <option value="./allSounds/snare-acoustic01.wav">Acoustic Snare</option>
@@ -64,7 +64,7 @@
       <div class="controls">
         <h1>Hihat</h1>
         <button data-track="1" class="mute hihat-volume">
-          <i class="fa fa-microphone-slash"></i>
+          <i class="fa fa-volume-off"></i>
         </button>
         <select name="hihat-select" id="hihat-select">
           <option value="./allSounds/hihat-acoustic01.wav">Acoustic Hihat</option>
@@ -84,7 +84,15 @@
       </div>
     </div>
 
+    <button class="play">Play</button>
+    
   </div>
+
+
+  <audio class="kick-sound" src="./allSounds/kick-classic.wav"></audio>
+  <audio class="snare-sound" src="./allSounds/snare-acoustic01.wav"></audio>
+  <audio class="hihat-sound" src="./allSounds/hihat-acoustic01.wav"></audio>
+
   <script src="./script.js"></script>
 </body>
 </html>
