@@ -9,7 +9,7 @@ $kick-pad-active-color: #ac3ac9;
 $snare-pad-color: #7394c7;
 $snare-pad-active-color: #3b72c5;
 $hihat-pad-color: #76c7a8;
-$hihat-pad-active-color: #3ec793;
+$hihat-pad-active-color: #219669;
 $button-bg: #4e4e4e;
 $button-color: #fff;
 
@@ -111,11 +111,14 @@ svg {
       background: $hihat-pad-active-color;
     }
 
-    .kick-pad.active,
-    .snare-pad.active,
-    .hihat-pad.active {
-      transform: scale(1.1);
-    }
+  }
+}
 
+@keyframes playTrack {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
   }
 }

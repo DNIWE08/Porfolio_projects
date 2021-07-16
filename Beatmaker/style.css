@@ -224,37 +224,28 @@ svg {
 .hihat-track .kick .hihat-pad.active,
 .hihat-track .snare .hihat-pad.active,
 .hihat-track .hihat .hihat-pad.active {
-  background: #3ec793;
+  background: #219669;
 }
 
-.kick-track .kick .kick-pad.active,
-.kick-track .kick .snare-pad.active,
-.kick-track .kick .hihat-pad.active,
-.kick-track .snare .kick-pad.active,
-.kick-track .snare .snare-pad.active,
-.kick-track .snare .hihat-pad.active,
-.kick-track .hihat .kick-pad.active,
-.kick-track .hihat .snare-pad.active,
-.kick-track .hihat .hihat-pad.active,
-.snare-track .kick .kick-pad.active,
-.snare-track .kick .snare-pad.active,
-.snare-track .kick .hihat-pad.active,
-.snare-track .snare .kick-pad.active,
-.snare-track .snare .snare-pad.active,
-.snare-track .snare .hihat-pad.active,
-.snare-track .hihat .kick-pad.active,
-.snare-track .hihat .snare-pad.active,
-.snare-track .hihat .hihat-pad.active,
-.hihat-track .kick .kick-pad.active,
-.hihat-track .kick .snare-pad.active,
-.hihat-track .kick .hihat-pad.active,
-.hihat-track .snare .kick-pad.active,
-.hihat-track .snare .snare-pad.active,
-.hihat-track .snare .hihat-pad.active,
-.hihat-track .hihat .kick-pad.active,
-.hihat-track .hihat .snare-pad.active,
-.hihat-track .hihat .hihat-pad.active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@-webkit-keyframes playTrack {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes playTrack {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 /*# sourceMappingURL=style.css.map */
