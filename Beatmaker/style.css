@@ -75,6 +75,12 @@ svg {
   margin: 0rem 2rem;
 }
 
+.kick-track .controls .mute.active,
+.snare-track .controls .mute.active,
+.hihat-track .controls .mute.active {
+  color: #ff0000;
+}
+
 .kick-track .controls select,
 .snare-track .controls select,
 .hihat-track .controls select {

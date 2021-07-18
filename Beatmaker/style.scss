@@ -57,6 +57,10 @@ svg {
     flex: 1;
     margin: 0rem 2rem;
 
+    .mute.active {
+      color: #ff0000;
+    }
+
     select {
       padding: 1rem;
       font-size: 1rem;
