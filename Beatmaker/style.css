@@ -41,6 +41,42 @@ svg {
   cursor: pointer;
 }
 
+.sequencer .tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.sequencer .tempo-slider {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #4e4e4e;
+  cursor: pointer;
+}
+
+.sequencer .tempo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  background: #8b6fbe;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.sequencer .tempo-slider::-webkit-slider-thumb:hover {
+  background: #cfb6ff;
+}
+
+.sequencer .tempo p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .kick-track,
 .snare-track,
 .hihat-track {
