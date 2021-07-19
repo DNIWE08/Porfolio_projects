@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$kick-pad-color: #b97ac9;
+$kick-pad-active-color: #ac3ac9;
+$snare-pad-color: #7394c7;
+$snare-pad-active-color: #3b72c5;
+$hihat-pad-color: #76c7a8;
+$hihat-pad-active-color: #219669;
+$button-bg: #4e4e4e;
+$button-color: #fff;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+i, 
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .play {
+    margin: 2rem 0 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background: $button-bg;
+    color: $button-color;
+    border: none;
+    cursor: pointer;
+  }
+
+  .tempo {
+    margin: 3rem;
+    width: 30%;
+
+    &-slider {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 1.5rem;
+      appearance: none;
+      background-color: $button-bg;
+      cursor: pointer;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        background: #8b6fbe;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+
+      &::-webkit-slider-thumb:hover {
+        background: #cfb6ff;
+      }
+
+    }
+
+    p {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+
+}
+
+.kick-track,
+.snare-track,
+.hihat-track {
+
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin: 0rem 2rem;
+
+    .mute.active {
+      color: #ff0000;
+    }
+
+    select {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 1rem;
+      border: none;
+      background: $button-bg;
+      color: $button-color;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .kick,
+  .snare,
+  .hihat {
+    display: flex;
+
+    .pad {
+      transition: all 0.3s ease;
+    }
+  
+    .kick-pad,
+    .snare-pad,
+    .hihat-pad {
+      width: 5rem;
+      height: 5rem;
+      margin: 1rem 0.3rem;
+      cursor: pointer;
+    }
+
+    .kick-pad {
+      background: $kick-pad-color;
+    }
+    .snare-pad {
+      background: $snare-pad-color;
+    }
+    .hihat-pad {
+      background: $hihat-pad-color;
+    }
+
+    .kick-pad.active {
+      background: $kick-pad-active-color;
+    }
+    .snare-pad.active {
+      background: $snare-pad-active-color;
+    }
+    .hihat-pad.active {
+      background: $hihat-pad-active-color;
+    }
+
+  }
+}
+
+@keyframes playTrack {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
