@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    color: #e3e3e3;
+}
+
+button {
+    font-family: 'Muli', sans-serif;
+}
+
+svg,
+i,
+path {
+    pointer-events: none;
+}
+
+.colors {
+    min-height: 80vh;
+    display: flex;
+    color: #33ee;
+
+    .color {
+        height: 60vh;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        position: relative;
+        overflow: hidden;
+
+        h2 {
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .sliders {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 10%;
+            background-color: rgb(147, 110, 231);
+            padding: 1rem;
+            width: 80%;
+            // border-top-left-radius: 1rem;
+            // border-top-right-radius: 1rem;
+            pointer-events: none;
+            transform: translateY(100px);
+            transition: all .5s ease;
+
+            .active {
+                opacity: 1;
+                transform: translateY(0px);
+                pointer-events: all;
+            }
+
+            button {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 0.5rem;
+                background: #fff;
+                cursor: pointer;
+                border: none;
+                border-radius: 50%;
+            }
+
+        }
+
+        .controls {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+}
+
+.panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+
+    button {
+        font-size: 1.2rem;
+        margin: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+}
