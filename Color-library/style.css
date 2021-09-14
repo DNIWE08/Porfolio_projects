@@ -70,8 +70,6 @@ path {
   padding: 2rem .7rem;
   width: 80%;
   border-radius: 1rem;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
