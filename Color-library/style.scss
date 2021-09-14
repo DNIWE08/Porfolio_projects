@@ -51,7 +51,7 @@ path {
             // border-top-left-radius: 1rem;
             // border-top-right-radius: 1rem;
             pointer-events: none;
-            transform: translateY(100px);
+            transform: translateY(200px);
             transition: all .5s ease;
 
             .active {
@@ -98,4 +98,19 @@ path {
         font-size: 1.2rem;
     }
 
+    .library-panel,
+    .generate-panel,
+    .save-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.adjust,.lock {
+    font-size: 2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 2rem 0rem;
 }
